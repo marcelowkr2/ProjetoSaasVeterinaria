@@ -1,7 +1,7 @@
 # Projeto Saas para Clinica Veterinaria
 Projeto para criação de uma aplicação web para clinicas veterinárias<br>
 
-'''
+```
 vetcare-saas/
 ├── backend/
 │   ├── config/                  # Configurações do Django (settings, URLs, WSGI)
@@ -46,4 +46,4 @@ vetcare-saas/
 ├── .gitignore
 ├── README.md                    # Visão geral do projeto
 └── docker-compose.yml
-'''
+```

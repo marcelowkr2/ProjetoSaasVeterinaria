@@ -1,8 +1,10 @@
 # Projeto Saas para Clinica Veterinaria
 Projeto para criação de uma aplicação web para clinicas veterinárias<br>
 
+### Estrutura do Projeto.
+
 ```
-vetcare-saas/
+ProjetoSaasVeterinaria/
 ├── backend/
 │   ├── config/                  # Configurações do Django (settings, URLs, WSGI)
 │   ├── core/                    # Autenticação, usuários, permissões

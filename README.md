@@ -4,7 +4,7 @@ Projeto para criação de uma aplicação web para clinicas veterinárias<br>
 ### Estrutura do Projeto.
 
 ```
-PProjetoSaasVeterinaria/
+ProjetoSaasVeterinaria/
 ├── backend/
 │   ├── config/                  # Configurações principais do Django (settings, URLs, WSGI, ASGI)
 │   ├── core/                    # Núcleo do sistema: Autenticação, usuários, permissões e perfis

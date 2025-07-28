@@ -1,0 +1,35 @@
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: vetdb
+      POSTGRES_USER: vetuser
+      POSTGRES_PASSWORD: vetpass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://vetuser:vetpass@db:5432/vetdb
+
+  frontend:
+    build: ./frontend
+    command: npm run dev
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
